@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: GREEN;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxblackjack.view.ExplanationScreenController">
+   <children>
+      <Text layoutX="1016.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="390.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Blackjack Rules" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="14.203125">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The object of the game is to get as close to 21 as possible without going over it.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Circle fill="TRANSPARENT" layoutX="1040.0" layoutY="173.0" radius="70.0" stroke="RED" strokeType="INSIDE" strokeWidth="4.0" />
+      <Line endX="50.0" layoutX="970.0" layoutY="173.0" startX="-20.0" stroke="RED" strokeWidth="4.0" />
+      <Line endX="-50.0" layoutX="1110.0" layoutY="173.0" startX="20.0" stroke="RED" strokeWidth="4.0" />
+      <Line endY="-50.0" layoutX="1040.0" layoutY="243.0" startY="20.0" stroke="RED" strokeWidth="4.0" />
+      <Line endY="50.0" layoutX="1042.0" layoutY="103.0" startY="-20.0" stroke="RED" strokeWidth="4.0" />
+      <Text layoutX="38.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First the bank and the player draw two cards. &#10;One of the bank's cards will be face up, the other face down.&#10;After this you can press hit to draw a new card.&#10;Or stand to stop and let the computer take his turn.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="850.0" layoutY="217.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Hit">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="850.0" layoutY="285.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Stand">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="38.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The computer will wait with his next move until you press continue.&#10;The computer will draw cards until he has a least 19.&#10;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="800.0" layoutY="353.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Press to Continue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="73.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/2.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="505.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Values">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="163.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text=": 11 or 1 (see below)">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="390.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="506.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/11.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="622.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/14.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="473.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="586.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="710.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text=": 10">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="80.0" layoutX="820.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/32.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="793.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All number cards">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="903.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text=": the number displayed on the card">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="206.0" layoutY="683.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aces">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aces are worth 11 at the start.&#10;But if you go over 21 with an ace in your hand,&#10;The Ace's worth will be changed to 1.&#10;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="backbutton" layoutX="1060.0" layoutY="811.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Back to game" />
+      <Text layoutX="835.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Betting">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="583.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After the first cards have been drawn, you can decide &#10;how much of your money you want to bet on this hand.&#10;If you win you get 2x the bet, if you lose you lose your bet.&#10;on a draw you get the bet money back.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
